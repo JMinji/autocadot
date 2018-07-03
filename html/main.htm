@@ -1,0 +1,87 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <section id="autocadot_banner_area">
+      <div class="flexslider">
+        <ul class="slides">
+            {bannerhtml}
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="autocadot_tag_area">
+      <div class="tag_area_inner">
+        <h2>TAGS</h2>
+        <ul>
+          {tagHtml}
+        </ul>
+      </div>
+    </section>
+   <article>
+    <!-- autocadot_tag_area e -->
+    <section id="autocadot_recommend_area">
+    	<div class="recommend_area_inner">
+        <h2>오토캐드닷 추천 콘텐츠</h2>
+        <ul class="recommend_list_area">
+        	{listhtml1}
+        </ul>
+    	</div>
+    </section>
+    <!-- autocadot_recommend_area e -->
+    <section id="autocadot_utility_area">
+    	<div class="utility_area_inner">
+        <h2>AutoCAD 활용하기</h2>
+        <ul class="utility_list_area">
+            {listhtml2}
+
+        </ul>
+    	</div>
+    </section>
+    <!-- autocadot_utility_area e -->
+    <div class="autocadot_bottom_inner">
+
+      <section id="autocadot_library_area">
+        <h2>자료실</h2>
+        <ul>
+          {psdlist}
+        </ul>
+        <a class="library_more_btn" href="/library/">자료실 더보기</a>
+      </section>
+      <!-- autocadot_library_area e -->
+      <section id="autocadot_member_email_area">
+        <section id="autocadot_membership_area">
+          <h2>멤버쉽 상담 신청</h2>
+          <div class="autocadot_membership_inner">
+            <img src="/asset/img/membership_img.png">
+            <p>최신 데스크탑 소프트웨어를 저렴한 초기 비용에 사용할 만큼 지불하는 합리적인 가격 방식으로 제공합니다.</p>
+            <span><b>[구매문의]</b> 080-234-3500</span>
+        	</div>
+          <a href="http://autode.sk/29pO5pV" target="_blank">상담 신청하기</a>
+        </section>
+        <!-- autocadot_membership_area e -->
+        <section id="autocadot_email_area">
+          <h2>AutoCADOT 뉴스레터 구독</h2>
+          <div class="autocadot_email_inner">
+            <p>AutoCADOT에서 전하는 소식을 받아보세요.</p>
+            <label><input type="text" id="mailaddtxt" name="mailaddtxt" placeholder="이메일 주소를 입력해 주세요."></label>
+          	<a href="javascript:mailadd()">구독하기</a>
+        	</div>
+        </section>
+        <!-- autocadot_email_area e -->
+      </section>
+      <section id="autocadot_facebook_area">
+        <div class="fb-page" data-href="https://www.facebook.com/AutodeskKorea/" data-tabs="timeline" data-width="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        	<blockquote cite="https://www.facebook.com/AutodeskKorea/" class="fb-xfbml-parse-ignore">
+          	<a href="https://www.facebook.com/AutodeskKorea/">Autodesk Korea</a>
+          </blockquote>
+        </div>
+  		</section>
+    </div>
+  </article>
