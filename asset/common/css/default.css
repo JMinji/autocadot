@@ -1,0 +1,118 @@
+/* CSS Document */
+
+/* -----------------
+
+	HTML5 RESET CSS
+		ver.160708		
+
+------------------*/
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:top;
+	-webkit-text-size-adjust:none;
+	font-family:'ArtifaktR',frutiger,sans-serif,'MGothic','맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,AppleGothic;
+	_font-family:'MGothic','맑은 고딕','Malgun Gothic','ArtifaktR',frutiger,sans-serif,'돋움',Dotum,'굴림',Gulim,AppleGothic;	
+	letter-spacing:-.4px
+}
+@font-face{
+	font-family:MGothic;
+	src:url('/asset/fonts/MGothic.eot');
+  src: url('/asset/fonts/MGothic.woff') format('woff'), local('Malgun Gothic'), url('/asset/fonts/MGothic.ttf') format('truetype');
+}
+@font-face{
+	font-family:NBGothic;
+	src:url('/asset/fonts/NanumBarunGothic.eot');
+  src: url('/asset/fonts/NanumBarunGothic.woff') format('woff'), local('NanumBarunGothic'), url('/asset/fonts/NanumBarunGothic.ttf') format('truetype');
+}
+@font-face{
+	font-family:ArtifaktR;
+	src:url('/asset/fonts/ArtifaktElementOfc-Regular.eot');
+  src: url('/asset/fonts/ArtifaktElementOff-Regular') format('woff'), local('ArtifaktElement Bold'), url('/asset/fonts/ArtifaktElementOfc-Regular.ttf') format('truetype');
+}
+@font-face{
+	font-family:ArtifaktB;
+	src:url('/asset/fonts/ArtifaktElementOfc-Bold.eot');
+  src: url('/asset/fonts/ArtifaktElementOff-Bold.woff') format('woff'), local('ArtifaktElement Bold'), url('/asset/fonts/ArtifaktElementOfc-Bold.ttf') format('truetype');
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+	line-height:1
+}
+button{
+	background:none
+}
+h1,h2,h3,p,ul,li,dl,dt,dd,ol{
+	line-height:1.4em
+}
+section,li,a,input,div{
+	box-sizing:border-box
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol,ul,dl {
+  list-style: none;
+}
+blockquote,q {
+  quotes: none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration:none;
+}
+a:link,a:visited,a:hover,a:active {
+  text-decoration:none;
+}
+input,select {
+  vertical-align:middle;
+}
+button,label {
+	cursor:pointer;
+}
+i,em,address {
+	font-style:normal;
+	font-weight:normal;
+}
+img,video {
+	max-width:100%;
+	border:0;
+	vertical-align:top;
+}
+.hidden,legend,hr,caption{
+	text-indent:-9999px;
+	display:block;
+	overflow:hidden
+}
