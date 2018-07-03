@@ -1,0 +1,43 @@
+<?
+/*******************************************************************************
+ Description : 인덱스 파일
+Author      : manjaecho
+CreateDate  : 2012-05-30
+CopyRight   : Copyright(c) reseed(주) All Right Reserved.
+UpdateDate  :
+
+Todo        :
+*******************************************************************************/
+$DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
+
+include "$DOCUMENT_ROOT/_common/DWS_headern.php";
+
+
+$page_name = $_GET['auto'];
+
+if(!$page_name) $page_name="main2";
+
+# db 접속 및 게시판 설정
+include $DOCUMENT_ROOT."/_common/function.inc";
+
+$tempdir = explode("/", $_SERVER['PHP_SELF']);
+$dir = $tempdir[1];
+$dirpath = $DOCUMENT_ROOT."/html/";
+
+
+$include_path = $DOCUMENT_ROOT."/php/${page_name}.php";
+
+if(file_exists($include_path))
+{
+	include "$include_path";
+}
+else
+{
+	$page_name="pagenot";
+	$dir = "/";
+	$dirpath = $DOCUMENT_ROOT.$dir;
+	$_mainpage = $_printpage->mainpage($dirpath,$page_name,$field,$field_text);
+}
+
+include_once "$DOCUMENT_ROOT/_common/DWS_printpageN.php";
+?>
